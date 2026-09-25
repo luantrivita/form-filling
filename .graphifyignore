@@ -1,0 +1,10 @@
+# Keep Graphify focused on project architecture/contracts/docs, not generated/noisy corpora.
+tools/upstreams/
+data/external/
+experiments/
+logs/
+docs/reports/
+tests/
+.pytest_cache/
+.codegraph/
+graphify-out/

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "generation_case.schema.json",
+  "title": "ESF Generation Case Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generation_controls",
+    "fact_graph",
+    "conversation",
+    "evidence_alignment"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generation_controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "length_tier",
+        "scenario_tags",
+        "allowed_speakers",
+        "style"
+      ],
+      "properties": {
+        "length_tier": {
+          "enum": [
+            "SHORT",
+            "MEDIUM",
+            "LONG"
+          ]
+        },
+        "scenario_tags": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "positive_current",
+              "explicit_negative",
+              "historical",
+              "resolved",
+              "uncertain",
+              "self_correction",
+              "source_conflict",
+              "not_mentioned",
+              "indirect_expression",
+              "multi_value",
+              "numeric_unit",
+              "code_switch",
+              "asr_noise",
+              "long_context",
+              "caregiver_report",
+              "distractor"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "allowed_speakers": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "INTAKE_ASSISTANT",
+              "PATIENT",
+              "CAREGIVER"
+            ]
+          }
+        },
+        "style": {
+          "enum": [
+            "natural",
+            "colloquial",
+            "mixed"
+          ]
+        },
+        "max_extra_minor_facts": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        }
+      }
+    },
+    "fact_graph": {
+      "$ref": "fact_graph.schema.json"
+    },
+    "conversation": {
+      "$ref": "conversation.schema.json"
+    },
+    "evidence_alignment": {
+      "$ref": "evidence_alignment.schema.json"
+    }
+  }
+}

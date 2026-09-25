@@ -1,0 +1,6 @@
+[submodule "tools/upstreams/graphify"]
+	path = tools/upstreams/graphify
+	url = https://github.com/Graphify-Labs/graphify.git
+[submodule "tools/upstreams/codegraph"]
+	path = tools/upstreams/codegraph
+	url = https://github.com/colbymchenry/codegraph.git

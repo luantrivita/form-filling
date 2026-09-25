@@ -1,0 +1,1022 @@
+{
+  "form_id": "MOH_29_BV_02",
+  "official_form_code": "29/BV-02",
+  "title_vi": "Phiếu khám bệnh vào viện",
+  "technical_form_id": null,
+  "source_status": "TECHNICAL_GUIDANCE",
+  "regulatory_basis": "Thông tư 32/2023/TT-BYT",
+  "json_structure": "FLAT",
+  "scope_note": "V1 autofill scope is limited to patient-reported pre-visit/history fields; clinician examination, diagnosis and treatment are excluded.",
+  "fields": [
+    {
+      "field_id": "1.1",
+      "technical_name": "ID",
+      "label_vi": "Mã định danh phiếu/giấy",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.2",
+      "technical_name": "MaBenhNhan",
+      "label_vi": "Mã bệnh nhân",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.3",
+      "technical_name": "BuongKhamBenh",
+      "label_vi": "Buồng khám bệnh",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "100",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.4",
+      "technical_name": "SoVaoVien",
+      "label_vi": "Số vào viện",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "50",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.5",
+      "technical_name": "HoVaTenBenhNhan",
+      "label_vi": "Họ và tên bệnh nhân",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.6",
+      "technical_name": "NgaySinh",
+      "label_vi": "Ngày sinh",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "DATE",
+      "source_data_type": "Ngày",
+      "max_length_or_format": "YYYY/MM/DD",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.7",
+      "technical_name": "Tuoi",
+      "label_vi": "Tuổi",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.8",
+      "technical_name": "GioiTinh",
+      "label_vi": "Giới tính ( | 1-Nam,  | 2-Nữ,  | 3-Khác)",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "1",
+      "reference": "Theo BHYT: 1: Nam; 2: Nữ; 3: Chưa xác định",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.9",
+      "technical_name": "NgheNghiep",
+      "label_vi": "Nghề nghiệp",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "100",
+      "reference": "Quyết định 34/2020/QĐ-TT, ngày 26 tháng 11 năm 2020 của Thủ tướng",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.10",
+      "technical_name": "MaNgheNghiep",
+      "label_vi": "Mã nghề nghiệp (theo danh mục)",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "4",
+      "reference": "Quyết định 34/2020/QĐ-TT, ngày 26 tháng 11 năm 2020 của Thủ tướng",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.11",
+      "technical_name": "DanToc",
+      "label_vi": "Dân tộc",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "50",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.12",
+      "technical_name": "MaDanToc",
+      "label_vi": "Mã dân tộc",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.13",
+      "technical_name": "QuocTich",
+      "label_vi": "Quốc tịch (nếu ngoại kiều)",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "100",
+      "reference": "Thông tư 07/2016/TT-BCA, ngày 01/02/2016 của Bộ Công an: phụ lục 2",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.14",
+      "technical_name": "MaNgoaiKieu",
+      "label_vi": "Mã quốc gia",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "20",
+      "reference": "Thông tư 07/2016/TT-BCA, ngày 01/02/2016 của Bộ Công an: phụ lục 2",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.15",
+      "technical_name": "MaQuanLy",
+      "label_vi": "Mã quản lý",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.16",
+      "technical_name": "SoYTe",
+      "label_vi": "Tên Sở Y tế",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.17",
+      "technical_name": "BenhVien",
+      "label_vi": "Tên bệnh viện",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": "Theo danh mục BHYT",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.18",
+      "technical_name": "MaCSKCB",
+      "label_vi": "Mã cơ sở khám chữa bệnh",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "1.19",
+      "technical_name": "IDMauPhieu",
+      "label_vi": "Mã định danh mẫu phiếu",
+      "section_code": "I",
+      "section_name": "Thông tin hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "5",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "2.1",
+      "technical_name": "SoNha",
+      "label_vi": "Số nhà",
+      "section_code": "II",
+      "section_name": "Địa chỉ thường trú",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "2.2",
+      "technical_name": "ThonPho",
+      "label_vi": "Thôn/Ấp/Tổ/Phố",
+      "section_code": "II",
+      "section_name": "Địa chỉ thường trú",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "2.3",
+      "technical_name": "XaPhuong",
+      "label_vi": "Xã/Phường",
+      "section_code": "II",
+      "section_name": "Địa chỉ thường trú",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": "Theo tổng cục thống kê",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "2.6",
+      "technical_name": "TinhThanhPho",
+      "label_vi": "Tỉnh/Thành phố",
+      "section_code": "II",
+      "section_name": "Địa chỉ thường trú",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": "Theo tổng cục thống kê",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "2.7",
+      "technical_name": "MaTinhThanhPho",
+      "label_vi": "Mã tỉnh/thành phố",
+      "section_code": "II",
+      "section_name": "Địa chỉ thường trú",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "10",
+      "reference": "Theo tổng cục thống kê",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.1",
+      "technical_name": "NoiLamViec",
+      "label_vi": "Nơi làm việc/Đơn vị công tác",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": "Quyết định 34/2020/QĐ-TT, ngày 26 tháng 11 năm 2020 của Thủ tướng",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.2",
+      "technical_name": "LoaiDoiTuong",
+      "label_vi": "Loại đối tượng  | 1=BHYT,  | 2=Thu phí,  | 3=Miễn,  | 4=Khác",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "1",
+      "reference": "Quyết định 824/QĐ-BYT, ngày 15 tháng 02 năm 2023 của Bộ Y Tế: phụ lục 2",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.3",
+      "technical_name": "TheCoGiaTriTuNgay",
+      "label_vi": "Thẻ có giá trị từ ngày",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "DATE",
+      "source_data_type": "Ngày",
+      "max_length_or_format": "YYYY/MM/DD",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.4",
+      "technical_name": "SoTheBHYT",
+      "label_vi": "Số thẻ BHYT",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.5",
+      "technical_name": "NoiDangKyCBBD",
+      "label_vi": "Nơi đăng ký khám chữa bệnh ban đầu",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.6",
+      "technical_name": "HoTenDiaChiNguoiNha",
+      "label_vi": "Họ tên + địa chỉ người nhà",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.7",
+      "technical_name": "SoDienThoaiNguoiNha",
+      "label_vi": "Số điện thoại người nhà",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "20",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "3.8",
+      "technical_name": "CanNang",
+      "label_vi": "Cân nặng (kg)",
+      "section_code": "III",
+      "section_name": "Thông tin bổ sung",
+      "data_type": "NUMBER",
+      "source_data_type": "Số thực",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "MEASURED",
+      "fill_policy": "MEASURED_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "4.1",
+      "technical_name": "GioKhamBenh",
+      "label_vi": "Giờ khám bệnh",
+      "section_code": "IV",
+      "section_name": "Thời gian khám",
+      "data_type": "DATETIME",
+      "source_data_type": "Ngày giờ",
+      "max_length_or_format": "YYYY/MM/DD HH:mm",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "4.2",
+      "technical_name": "NgayKham",
+      "label_vi": "Ngày khám bệnh",
+      "section_code": "IV",
+      "section_name": "Thời gian khám",
+      "data_type": "DATETIME",
+      "source_data_type": "Ngày giờ",
+      "max_length_or_format": "YYYY/MM/DD HH:mm",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "4.3",
+      "technical_name": "NgayVaoVien",
+      "label_vi": "Ngày vào viện",
+      "section_code": "IV",
+      "section_name": "Thời gian khám",
+      "data_type": "DATETIME",
+      "source_data_type": "Ngày giờ",
+      "max_length_or_format": "YYYY/MM/DD HH:mm",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "5.1",
+      "technical_name": "ChanDoanNoiGT",
+      "label_vi": "Chẩn đoán nơi giới thiệu",
+      "section_code": "V",
+      "section_name": "Chuyên môn – Lý do vào viện",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "5.2",
+      "technical_name": "LyDoVaoVien",
+      "label_vi": "Lý do vào viện",
+      "section_code": "V",
+      "section_name": "Chuyên môn – Lý do vào viện",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": null,
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "ENCOUNTER.REASON_FOR_VISIT",
+        "ENCOUNTER.CHIEF_COMPLAINT"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "5.3",
+      "technical_name": "QuaTrinhBenhLi",
+      "label_vi": "Quá trình bệnh lý",
+      "section_code": "V",
+      "section_name": "Chuyên môn – Lý do vào viện",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2000",
+      "reference": null,
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "HPI.SUMMARY",
+        "HPI.ONSET",
+        "HPI.DURATION",
+        "HPI.COURSE",
+        "HPI.SEVERITY",
+        "HPI.LOCATION",
+        "HPI.CHARACTER",
+        "HPI.FREQUENCY",
+        "HPI.AGGRAVATING_FACTOR",
+        "HPI.RELIEVING_FACTOR",
+        "HPI.ASSOCIATED_SYMPTOM"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "5.4",
+      "technical_name": "TienSuBenhBanThan",
+      "label_vi": "Tiền sử bệnh bản thân",
+      "section_code": "V",
+      "section_name": "Chuyên môn – Lý do vào viện",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2000",
+      "reference": null,
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "HISTORY.CHRONIC_CONDITION",
+        "HISTORY.PAST_CONDITION",
+        "HISTORY.HOSPITALIZATION",
+        "HISTORY.SURGERY"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "5.5",
+      "technical_name": "TienSuBenhGiaDinh",
+      "label_vi": "Tiền sử bệnh gia đình",
+      "section_code": "V",
+      "section_name": "Chuyên môn – Lý do vào viện",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2000",
+      "reference": null,
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "HISTORY.FAMILY_CONDITION"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "6.1",
+      "technical_name": "KhamXetToanThan",
+      "label_vi": "Khám toàn thân",
+      "section_code": "VI",
+      "section_name": "Khám lâm sàng",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2000",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "6.2",
+      "technical_name": "Mach",
+      "label_vi": "Mạch (lần/phút)",
+      "section_code": "VI",
+      "section_name": "Khám lâm sàng",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "MEASURED",
+      "fill_policy": "MEASURED_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "6.3",
+      "technical_name": "NhietDo",
+      "label_vi": "Nhiệt độ (°C)",
+      "section_code": "VI",
+      "section_name": "Khám lâm sàng",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "MEASURED",
+      "fill_policy": "MEASURED_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "6.4",
+      "technical_name": "HuyetAp",
+      "label_vi": "Huyết áp (mmHg)",
+      "section_code": "VI",
+      "section_name": "Khám lâm sàng",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "20",
+      "reference": null,
+      "input_scope": "MEASURED",
+      "fill_policy": "MEASURED_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "6.5",
+      "technical_name": "NhipTho",
+      "label_vi": "Nhịp thở (lần/phút)",
+      "section_code": "VI",
+      "section_name": "Khám lâm sàng",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "MEASURED",
+      "fill_policy": "MEASURED_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "6.6",
+      "technical_name": "KhamXetCacBoPhan",
+      "label_vi": "Khám các cơ quan/bộ phận",
+      "section_code": "VI",
+      "section_name": "Khám lâm sàng",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2000",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "7.1",
+      "technical_name": "TomTatKetQua",
+      "label_vi": "Tóm tắt kết quả cận lâm sàng (nếu có)",
+      "section_code": "VII",
+      "section_name": "Kết quả & xử trí",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2000",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "7.2",
+      "technical_name": "ChanDoanVaoVien",
+      "label_vi": "Chẩn đoán vào viện (chính + kèm theo + ICD10)",
+      "section_code": "VII",
+      "section_name": "Kết quả & xử trí",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "7.3",
+      "technical_name": "DaXuLi",
+      "label_vi": "Đã xử lý (thuốc cấp cứu, thủ thuật…)",
+      "section_code": "VII",
+      "section_name": "Kết quả & xử trí",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2000",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "7.4",
+      "technical_name": "DieuTriTaiKhoa",
+      "label_vi": "Điều trị tại khoa (tên khoa)",
+      "section_code": "VII",
+      "section_name": "Kết quả & xử trí",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "7.5",
+      "technical_name": "ChuY",
+      "label_vi": "Chú ý đặc biệt",
+      "section_code": "VII",
+      "section_name": "Kết quả & xử trí",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "300",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    },
+    {
+      "field_id": "8.1",
+      "technical_name": "TenBacSi",
+      "label_vi": "Tên bác sĩ khám",
+      "section_code": "VIII",
+      "section_name": "Ký phiếu",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Phiếu khám bệnh vào viện.docx"
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "concept_id": "ENCOUNTER.CHIEF_COMPLAINT",
+    "canonical_name": "Chief complaint",
+    "labels": {
+      "vi": "Lý do khám / triệu chứng chính",
+      "en": "Chief complaint"
+    },
+    "aliases": [
+      "lý do khám",
+      "lý do vào viện",
+      "triệu chứng chính"
+    ],
+    "description": "Vấn đề chính do bệnh nhân/người nhà khai dẫn đến lần khám.",
+    "value_type": "STRING",
+    "allowed_values": null,
+    "unit": null,
+    "input_scope": [
+      "PATIENT_REPORTED",
+      "CAREGIVER_REPORTED",
+      "HIS"
+    ],
+    "supports_negation": false,
+    "supports_temporality": true,
+    "regulatory_refs": [
+      "MOH_29_BV_02",
+      "MOH_15_BV_01"
+    ],
+    "schema_version": "0.1.0"
+  },
+  {
+    "concept_id": "HISTORY.ALLERGY.DRUG",
+    "canonical_name": "Drug allergy",
+    "labels": {
+      "vi": "Dị ứng thuốc",
+      "en": "Drug allergy"
+    },
+    "aliases": [
+      "dị ứng thuốc",
+      "allergy thuốc"
+    ],
+    "description": "Tiền sử dị ứng thuốc do bệnh nhân/người nhà khai hoặc từ HIS.",
+    "value_type": "REPEATED_OBJECT",
+    "allowed_values": null,
+    "unit": null,
+    "input_scope": [
+      "PATIENT_REPORTED",
+      "CAREGIVER_REPORTED",
+      "HIS"
+    ],
+    "supports_negation": true,
+    "supports_temporality": true,
+    "regulatory_refs": [
+      "TT51_2017",
+      "QD2805_2025"
+    ],
+    "schema_version": "0.1.0"
+  },
+  {
+    "concept_id": "RESP.DYSPNEA",
+    "canonical_name": "Dyspnea",
+    "labels": {
+      "vi": "Khó thở",
+      "en": "Dyspnea"
+    },
+    "aliases": [
+      "khó thở",
+      "hụt hơi",
+      "shortness of breath"
+    ],
+    "description": "Cảm giác khó thở do bệnh nhân khai.",
+    "value_type": "SINGLE_SELECT",
+    "allowed_values": [
+      "NONE",
+      "MILD",
+      "MODERATE",
+      "SEVERE"
+    ],
+    "unit": null,
+    "input_scope": [
+      "PATIENT_REPORTED",
+      "CAREGIVER_REPORTED",
+      "HIS"
+    ],
+    "supports_negation": true,
+    "supports_temporality": true,
+    "regulatory_refs": [],
+    "schema_version": "0.1.0"
+  }
+]

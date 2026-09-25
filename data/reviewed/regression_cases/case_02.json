@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1.0",
+  "generation_controls": {
+    "length_tier": "SHORT",
+    "scenario_tags": [
+      "explicit_negative"
+    ],
+    "allowed_speakers": [
+      "INTAKE_ASSISTANT",
+      "PATIENT"
+    ],
+    "style": "natural",
+    "max_extra_minor_facts": 0
+  },
+  "fact_graph": {
+    "base_case_id": "base_reg_02",
+    "registry_version": "0.1.0",
+    "facts": [
+      {
+        "fact_id": "f1",
+        "concept_id": "RESP.DYSPNEA",
+        "value": "NONE",
+        "unit": null,
+        "assertion": "NEGATIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "INACTIVE",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": ""
+      }
+    ],
+    "forbidden_major_facts": [
+      "new diagnosis",
+      "new treatment",
+      "unprovided exam finding"
+    ],
+    "case_notes": "explicit negative must not be NOT_MENTIONED"
+  },
+  "conversation": {
+    "conversation_id": "conv_reg_02",
+    "base_case_id": "base_reg_02",
+    "language": "vi",
+    "turns": [
+      {
+        "turn_id": 1,
+        "speaker": "INTAKE_ASSISTANT",
+        "text": "Hiện tại anh có thấy khó thở không?"
+      },
+      {
+        "turn_id": 2,
+        "speaker": "PATIENT",
+        "text": "Không, tôi không khó thở."
+      }
+    ],
+    "metadata": {
+      "synthetic": true,
+      "generator_version": "manual_regression_v0.1",
+      "prompt_version": "manual",
+      "registry_version": "0.1.0",
+      "schema_version": "0.1.0",
+      "seed": 2
+    }
+  },
+  "evidence_alignment": {
+    "conversation_id": "conv_reg_02",
+    "alignments": [
+      {
+        "fact_id": "f1",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 0,
+            "end_char": 25,
+            "text": "Không, tôi không khó thở."
+          }
+        ],
+        "supported": true,
+        "notes": ""
+      }
+    ]
+  }
+}

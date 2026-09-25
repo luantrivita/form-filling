@@ -1,0 +1,1383 @@
+{
+  "form_id": "MOH_15_BV_01",
+  "official_form_code": "15/BV-01",
+  "title_vi": "Bệnh án Ngoại trú chung",
+  "technical_form_id": 414,
+  "source_status": "TECHNICAL_GUIDANCE",
+  "regulatory_basis": "Thông tư 32/2023/TT-BYT",
+  "json_structure": "NESTED_ADMIN_PLUS_FLAT_CLINICAL",
+  "scope_note": "V1 autofill scope is limited to patient-reported pre-visit/history fields; clinician examination, diagnosis and treatment are excluded.",
+  "fields": [
+    {
+      "field_id": "1.1",
+      "technical_name": "MaQuanLy",
+      "label_vi": "Mã quản lý: mã duy nhất trong 1 đợt khám chữa bệnh (kcb), không trùng giữa các đợt kcb khác nhau",
+      "section_code": "I",
+      "section_name": "Định danh",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "1.2",
+      "technical_name": "MA_LK",
+      "label_vi": "Mã liên kết",
+      "section_code": "I",
+      "section_name": "Định danh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "1.3",
+      "technical_name": "IDMauPhieu",
+      "label_vi": "ID mẫu phiếu (414 = Bệnh án ngoại trú)",
+      "section_code": "I",
+      "section_name": "Định danh",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "5",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "1.4",
+      "technical_name": "TenMauPhieu",
+      "label_vi": "Tên mẫu phiếu",
+      "section_code": "I",
+      "section_name": "Định danh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.1",
+      "technical_name": "MaYTe",
+      "label_vi": "Mã cơ sở y tế",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.2",
+      "technical_name": "MaBenhNhan",
+      "label_vi": "Mã bệnh nhân trong bệnh viện",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.3",
+      "technical_name": "HoVaTenBenhNhan",
+      "label_vi": "Họ và tên bệnh nhân",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.4",
+      "technical_name": "NgaySinh",
+      "label_vi": "Ngày sinh",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "DATE",
+      "source_data_type": "Ngày",
+      "max_length_or_format": "YYYY/MM/DD",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.5",
+      "technical_name": "Tuoi",
+      "label_vi": "Tuổi",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.6",
+      "technical_name": "GioiTinh",
+      "label_vi": "Giới tính:  | 1-Nam,  | 2-Nữ,  | 3-Không biết,  | 4-Chưa xác định",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "1",
+      "reference": "Theo BHYT: 1: Nam; 2: Nữ; 3: Chưa xác định",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.7",
+      "technical_name": "TenNgheNghiep",
+      "label_vi": "Tên nghề nghiệp",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": "Quyết định 34/2020/QĐ-TT, ngày 26 tháng 11 năm 2020 của Thủ tướng",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.8",
+      "technical_name": "MaNgheNghiep",
+      "label_vi": "Mã nghề nghiệp",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "4",
+      "reference": "Quyết định 34/2020/QĐ-TT, ngày 26 tháng 11 năm 2020 của Thủ tướng",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.9",
+      "technical_name": "TenDanToc",
+      "label_vi": "Tên dân tộc",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.1",
+      "technical_name": "MaDanToc",
+      "label_vi": "Mã dân tộc",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "4",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.11",
+      "technical_name": "TenNgoaiKieu",
+      "label_vi": "Tên quốc tịch (ngoại kiều)",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": "Thông tư 07/2016/TT-BCA, ngày 01/02/2016 của Bộ Công an: phụ lục 2",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.12",
+      "technical_name": "MaNgoaiKieu",
+      "label_vi": "Mã quốc tịch",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "4",
+      "reference": "Thông tư 07/2016/TT-BCA, ngày 01/02/2016 của Bộ Công an: phụ lục 2",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.13",
+      "technical_name": "SoNha",
+      "label_vi": "Số nhà",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.14",
+      "technical_name": "ThonPho",
+      "label_vi": "Thôn/ấp/phố",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.15",
+      "technical_name": "TenPhuongXa",
+      "label_vi": "Tên phường/xã",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": "Theo tổng cục thống kê",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.16",
+      "technical_name": "MaPhuongXa",
+      "label_vi": "Mã phường/xã",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "10",
+      "reference": "Theo tổng cục thống kê",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.17",
+      "technical_name": "TenTinhThanh",
+      "label_vi": "Tên tỉnh/thành phố",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": "Theo tổng cục thống kê",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.18",
+      "technical_name": "MaTinhThanh",
+      "label_vi": "Mã tỉnh/thành phố",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2",
+      "reference": "Theo tổng cục thống kê",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.19",
+      "technical_name": "NoiLamViec",
+      "label_vi": "Nơi làm việc",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.2",
+      "technical_name": "DoiTuong",
+      "label_vi": "Đối tượng:  | 1-BHYT,  | 2-Thu phí,  | 3-Miễn phí,  | 4-Khác",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "INTEGER",
+      "source_data_type": "Số nguyên",
+      "max_length_or_format": "1",
+      "reference": "Quyết định 824/QĐ-BYT, ngày 15 tháng 02 năm 2023 của Bộ Y Tế: phụ lục 2",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.21",
+      "technical_name": "SoTheBHYT",
+      "label_vi": "Số thẻ BHYT",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": "Theo BHYT",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.22",
+      "technical_name": "TheCoGiaTriTuNgay",
+      "label_vi": "Thẻ có giá trị từ ngày",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "DATE",
+      "source_data_type": "Ngày",
+      "max_length_or_format": "YYYY/MM/DD",
+      "reference": "Theo BHYT",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.23",
+      "technical_name": "HoTenDiaChiNguoiNha",
+      "label_vi": "Họ tên, địa chỉ người nhà",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.24",
+      "technical_name": "SoDienThoaiNguoiNha",
+      "label_vi": "Số điện thoại người nhà",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "15",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.25",
+      "technical_name": "SoDienThoaiLienLac",
+      "label_vi": "Số điện thoại liên lạc",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "15",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.26",
+      "technical_name": "CCCD",
+      "label_vi": "CMND/CCCD/Hộ chiếu",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "12",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.27",
+      "technical_name": "NhomMau",
+      "label_vi": "Nhóm máu (A, B, AB, O)",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "3",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.28",
+      "technical_name": "RH",
+      "label_vi": "Rh (+ hoặc -)",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "3",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.29",
+      "technical_name": "ChanDoan_NoiGioiThieu",
+      "label_vi": "Chẩn đoán nơi giới thiệu",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "500",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.3",
+      "technical_name": "MaICD_ChanDoan_NoiGioiThieu",
+      "label_vi": "Mã ICD-10 chẩn đoán nơi giới thiệu",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "10",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.31",
+      "technical_name": "NgayKhamBenh",
+      "label_vi": "Thời gian khám bệnh (ngày giờ vào viện/lượt khám)",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "DATETIME",
+      "source_data_type": "Ngày giờ",
+      "max_length_or_format": "YYYY/MM/DD HH:mm",
+      "reference": null,
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "2.32",
+      "technical_name": "KhoaDieuTri",
+      "label_vi": "Tên khoa điều trị ngoại trú",
+      "section_code": "II",
+      "section_name": "Hành chính",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": "Quyết đinh 7603/QĐ-BYT, ngày 25 tháng 12 năm 2018 của Bộ Y Tế: phụ lục 2",
+      "input_scope": "HIS",
+      "fill_policy": "HIS_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "3.1",
+      "technical_name": "LyDoVaoVien",
+      "label_vi": "Lý do vào viện/lý do khám bệnh",
+      "section_code": "III",
+      "section_name": "Hỏi bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": "Quyết định 2493/QĐ-BYT,ngày 04 tháng 8 năm 2025 của BYT",
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "ENCOUNTER.REASON_FOR_VISIT",
+        "ENCOUNTER.CHIEF_COMPLAINT"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "3.2",
+      "technical_name": "QuaTrinhBenhLy",
+      "label_vi": "Quá trình bệnh lý",
+      "section_code": "III",
+      "section_name": "Hỏi bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "HPI.SUMMARY",
+        "HPI.ONSET",
+        "HPI.DURATION",
+        "HPI.COURSE",
+        "HPI.SEVERITY",
+        "HPI.LOCATION",
+        "HPI.CHARACTER",
+        "HPI.FREQUENCY",
+        "HPI.AGGRAVATING_FACTOR",
+        "HPI.RELIEVING_FACTOR",
+        "HPI.ASSOCIATED_SYMPTOM"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "3.3",
+      "technical_name": "TienSuBenhBanThan",
+      "label_vi": "Tiền sử bệnh bản thân",
+      "section_code": "III",
+      "section_name": "Hỏi bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "HISTORY.CHRONIC_CONDITION",
+        "HISTORY.PAST_CONDITION",
+        "HISTORY.HOSPITALIZATION",
+        "HISTORY.SURGERY"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "3.4",
+      "technical_name": "TienSuBenhGiaDinh",
+      "label_vi": "Tiền sử bệnh gia đình",
+      "section_code": "III",
+      "section_name": "Hỏi bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "PATIENT_REPORTED_OR_HIS",
+      "fill_policy": "PATIENT_OR_HIS",
+      "concept_refs": [
+        "HISTORY.FAMILY_CONDITION"
+      ],
+      "previsit_target": true,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.1",
+      "technical_name": "DauSinhTon",
+      "label_vi": "Dấu sinh tồn (mạch, nhiệt độ, huyết áp, nhịp thở, cân nặng, chiều cao, SpO2…)",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "OBJECT",
+      "source_data_type": "DauSinhTon",
+      "max_length_or_format": null,
+      "reference": null,
+      "input_scope": "MEASURED",
+      "fill_policy": "MEASURED_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.2",
+      "technical_name": "ToanThan",
+      "label_vi": "Khám toàn thân",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": "Quyết định 2493/QĐ-BYT,ngày 04 tháng 8 năm 2025 của BYT",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.3",
+      "technical_name": "CacBoPhan",
+      "label_vi": "Khám các bộ phận (tuần hoàn, hô hấp, tiêu hóa, tiết niệu…)",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.4",
+      "technical_name": "TomTatKetQuaCanLamSang",
+      "label_vi": "Tóm tắt kết quả cận lâm sàng có giá trị",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.5",
+      "technical_name": "ChanDoanBanDau",
+      "label_vi": "Chẩn đoán ban đầu",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": "Quyết định 2493/QĐ-BYT,ngày 04 tháng 8 năm 2025 của BYT",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.6",
+      "technical_name": "DaXuLy",
+      "label_vi": "Đã xử lý (hướng xử trí ban đầu)",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.7",
+      "technical_name": "ChanDoanKhiRaVien",
+      "label_vi": "Chẩn đoán xác định khi ra viện/kết thúc điều trị ngoại trú",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.8",
+      "technical_name": "MaICD_ChanDoanKhiRaVien",
+      "label_vi": "Mã ICD-10 chẩn đoán xác định",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "10",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.9",
+      "technical_name": "DieuTriNgoaiTru_TuNgay",
+      "label_vi": "Điều trị ngoại trú từ ngày",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "DATETIME",
+      "source_data_type": "Ngày giờ",
+      "max_length_or_format": "YYYY/MM/DD HH:mm",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.1",
+      "technical_name": "DieuTriNgoaiTru_DenNgay",
+      "label_vi": "Điều trị ngoại trú đến ngày",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "DATETIME",
+      "source_data_type": "Ngày giờ",
+      "max_length_or_format": "YYYY/MM/DD HH:mm",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.11",
+      "technical_name": "MaGiamDocBenhVien",
+      "label_vi": "Mã giám đốc bệnh viện",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.12",
+      "technical_name": "TenGiamDocBenhVien",
+      "label_vi": "Tên giám đốc bệnh viện",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.13",
+      "technical_name": "TenBacSiKhamBenh",
+      "label_vi": "Tên bác sĩ khám bệnh",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "4.14",
+      "technical_name": "MaBacSiKhamBenh",
+      "label_vi": "Mã bác sĩ khám bệnh",
+      "section_code": "IV",
+      "section_name": "Khám bệnh",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.1",
+      "technical_name": "QuaTrinhBenhLyVaDienBienLamSang",
+      "label_vi": "Quá trình bệnh lý và diễn biến lâm sàng",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "150",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.2",
+      "technical_name": "TomTatKetQuaXetNghiem",
+      "label_vi": "Tóm tắt kết quả xét nghiệm cận lâm sàng có giá trị chẩn đoán",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.3",
+      "technical_name": "BenhChinh",
+      "label_vi": "Bệnh chính",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.4",
+      "technical_name": "MaICD_BenhChinh",
+      "label_vi": "Mã ICD-10 bệnh chính",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "10",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.5",
+      "technical_name": "BenhKemTheo",
+      "label_vi": "Bệnh kèm theo",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.6",
+      "technical_name": "MaICD_BenhKemTheo",
+      "label_vi": "Mã ICD-10 bệnh kèm theo",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "10",
+      "reference": "Quyết đinh 4469/QĐ-BYT, ngày 28 tháng 10 năm 2020 của Bộ Y Tế",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.7",
+      "technical_name": "PhuongPhapDieuTri",
+      "label_vi": "Phương pháp điều trị",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.8",
+      "technical_name": "TinhTrangNguoiBenhRaVien",
+      "label_vi": "Tình trạng người bệnh khi ra viện/kết thúc điều trị",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.9",
+      "technical_name": "HuongDieuTriVaCacCheDoTiepTheo",
+      "label_vi": "Hướng điều trị và các chế độ tiếp theo",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "2048",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.1",
+      "technical_name": "HoSo",
+      "label_vi": "Thông tin hồ sơ kèm theo (X-quang, CT, siêu âm, xét nghiệm…)",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "OBJECT",
+      "source_data_type": "HoSo",
+      "max_length_or_format": null,
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.11",
+      "technical_name": "MaNguoiNhanHoSo",
+      "label_vi": "Mã người nhận hồ sơ",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": "Ưu tiên chứng chỉ hành nghề",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.12",
+      "technical_name": "TenNguoiNhanHoSo",
+      "label_vi": "Tên người nhận hồ sơ",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.13",
+      "technical_name": "MaNguoiGiaoHoSo",
+      "label_vi": "Mã người giao hồ sơ",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": "Ưu tiên chứng chỉ hành nghề",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.14",
+      "technical_name": "TenNguoiGiaoHoSo",
+      "label_vi": "Tên người giao hồ sơ",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.15",
+      "technical_name": "NgayTongKet",
+      "label_vi": "Ngày tổng kết bệnh án",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "DATETIME",
+      "source_data_type": "Ngày giờ",
+      "max_length_or_format": "YYYY/MM/DD HH:mm",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.16",
+      "technical_name": "MaBacSiDieuTri",
+      "label_vi": "Mã bác sĩ điều trị",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "25",
+      "reference": "Ưu tiên chứng chỉ hành nghề",
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    },
+    {
+      "field_id": "5.17",
+      "technical_name": "TenBacSiDieuTri",
+      "label_vi": "Tên bác sĩ điều trị",
+      "section_code": "V",
+      "section_name": "Tổng kết",
+      "data_type": "STRING",
+      "source_data_type": "Chuỗi",
+      "max_length_or_format": "250",
+      "reference": null,
+      "input_scope": "CLINICIAN_ONLY",
+      "fill_policy": "CLINICIAN_ONLY",
+      "concept_refs": [],
+      "previsit_target": false,
+      "source_provenance": {
+        "archive": "DacTaEMR-TT32.rar",
+        "technical_spec_document": "Bệnh án Ngoại trú chung.docx"
+      }
+    }
+  ]
+}

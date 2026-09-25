@@ -1,0 +1,96 @@
+{
+  "synur_train": {
+    "file": "mediqa_synur_train-00000-of-00001.jsonl",
+    "rows": 122,
+    "observation_type_counts": {
+      "SINGLE_SELECT": 1200,
+      "STRING": 108,
+      "MULTI_SELECT": 195,
+      "NUMERIC": 182
+    }
+  },
+  "synur_dev": {
+    "file": "mediqa_synur_dev-00000-of-00001.jsonl",
+    "rows": 101,
+    "observation_type_counts": {
+      "SINGLE_SELECT": 951,
+      "NUMERIC": 137,
+      "MULTI_SELECT": 157,
+      "STRING": 70
+    }
+  },
+  "synur_test": {
+    "file": "mediqa_synur_test-00000-of-00001.jsonl",
+    "rows": 199,
+    "observation_type_counts": {
+      "SINGLE_SELECT": 1853,
+      "NUMERIC": 257,
+      "STRING": 98,
+      "MULTI_SELECT": 344
+    }
+  },
+  "mts_MTS-Dialog-TestSet-1-MEDIQA-Chat-2023": {
+    "rows_total": 200,
+    "rows_previsit": 173,
+    "previsit_section_counts": {
+      "genhx": 53,
+      "fam/sochx": 45,
+      "ros": 17,
+      "pastmedicalhx": 14,
+      "allergy": 12,
+      "cc": 11,
+      "medications": 10,
+      "pastsurgical": 7,
+      "other_history": 3,
+      "gynhx": 1
+    }
+  },
+  "mts_MTS-Dialog-TestSet-2-MEDIQA-Sum-2023": {
+    "rows_total": 200,
+    "rows_previsit": 166,
+    "previsit_section_counts": {
+      "fam/sochx": 47,
+      "genhx": 37,
+      "pastmedicalhx": 32,
+      "cc": 13,
+      "ros": 10,
+      "medications": 9,
+      "allergy": 8,
+      "pastsurgical": 8,
+      "gynhx": 1,
+      "other_history": 1
+    }
+  },
+  "mts_MTS-Dialog-TrainingSet": {
+    "rows_total": 1201,
+    "rows_previsit": 1072,
+    "previsit_section_counts": {
+      "fam/sochx": 351,
+      "genhx": 282,
+      "pastmedicalhx": 118,
+      "cc": 77,
+      "pastsurgical": 63,
+      "allergy": 60,
+      "ros": 60,
+      "medications": 54,
+      "gynhx": 5,
+      "other_history": 2
+    }
+  },
+  "mts_MTS-Dialog-ValidationSet": {
+    "rows_total": 100,
+    "rows_previsit": 82,
+    "previsit_section_counts": {
+      "fam/sochx": 22,
+      "genhx": 20,
+      "ros": 11,
+      "pastsurgical": 8,
+      "medications": 7,
+      "allergy": 4,
+      "cc": 4,
+      "pastmedicalhx": 4,
+      "gynhx": 1,
+      "other_history": 1
+    }
+  }
+}

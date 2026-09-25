@@ -1,0 +1,154 @@
+{
+  "schema_version": "0.1.0",
+  "generation_controls": {
+    "length_tier": "SHORT",
+    "scenario_tags": [
+      "positive_current",
+      "explicit_negative",
+      "historical",
+      "self_correction"
+    ],
+    "allowed_speakers": [
+      "INTAKE_ASSISTANT",
+      "PATIENT"
+    ],
+    "style": "natural",
+    "max_extra_minor_facts": 0
+  },
+  "fact_graph": {
+    "base_case_id": "base_001",
+    "registry_version": "0.1.0",
+    "facts": [
+      {
+        "fact_id": "fact_001",
+        "concept_id": "ENCOUNTER.CHIEF_COMPLAINT",
+        "value": "khó thở từ sáng",
+        "unit": null,
+        "assertion": "POSITIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "ACTIVE",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": "chief complaint"
+      },
+      {
+        "fact_id": "fact_002",
+        "concept_id": "RESP.DYSPNEA",
+        "value": "MILD",
+        "unit": null,
+        "assertion": "POSITIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "ACTIVE",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": "patient reports mild dyspnea"
+      },
+      {
+        "fact_id": "fact_003",
+        "concept_id": "HISTORY.ALLERGY.DRUG",
+        "value": [],
+        "unit": null,
+        "assertion": "NEGATIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "UNKNOWN",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": "explicitly denies drug allergy"
+      }
+    ],
+    "forbidden_major_facts": [
+      "new diagnosis",
+      "new treatment",
+      "exam findings"
+    ],
+    "case_notes": "Short pre-visit intake"
+  },
+  "conversation": {
+    "conversation_id": "conv_001_v1",
+    "base_case_id": "base_001",
+    "language": "vi",
+    "turns": [
+      {
+        "turn_id": 1,
+        "speaker": "INTAKE_ASSISTANT",
+        "text": "Hôm nay anh đến khám vì vấn đề gì?"
+      },
+      {
+        "turn_id": 2,
+        "speaker": "PATIENT",
+        "text": "Từ sáng tôi thấy hơi khó thở."
+      },
+      {
+        "turn_id": 3,
+        "speaker": "INTAKE_ASSISTANT",
+        "text": "Anh có tiền sử dị ứng thuốc nào không?"
+      },
+      {
+        "turn_id": 4,
+        "speaker": "PATIENT",
+        "text": "Không, trước giờ tôi chưa từng dị ứng thuốc."
+      }
+    ],
+    "metadata": {
+      "synthetic": true,
+      "generator_version": "example",
+      "prompt_version": "0.1.0",
+      "registry_version": "0.1.0",
+      "schema_version": "0.1.0",
+      "seed": 1
+    }
+  },
+  "evidence_alignment": {
+    "conversation_id": "conv_001_v1",
+    "alignments": [
+      {
+        "fact_id": "fact_001",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 0,
+            "end_char": 28,
+            "text": "Từ sáng tôi thấy hơi khó thở."
+          }
+        ],
+        "supported": true,
+        "notes": ""
+      },
+      {
+        "fact_id": "fact_002",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 18,
+            "end_char": 28,
+            "text": "khó thở"
+          }
+        ],
+        "supported": true,
+        "notes": "mild encoded by 'hơi'"
+      },
+      {
+        "fact_id": "fact_003",
+        "turn_ids": [
+          4
+        ],
+        "spans": [
+          {
+            "turn_id": 4,
+            "start_char": 0,
+            "end_char": 40,
+            "text": "Không, trước giờ tôi chưa từng dị ứng thuốc."
+          }
+        ],
+        "supported": true,
+        "notes": "explicit negative"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "form_id": "MOH_15_BV_01",
+  "fields": [
+    {
+      "field_id": "3.1",
+      "technical_name": "LyDoVaoVien",
+      "status": "SUPPORTED",
+      "value": "khó thở từ sáng",
+      "source_fact_ids": [
+        "f1"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    },
+    {
+      "field_id": "3.2",
+      "technical_name": "QuaTrinhBenhLy",
+      "status": "NOT_MENTIONED",
+      "value": null,
+      "source_fact_ids": [],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    },
+    {
+      "field_id": "3.3",
+      "technical_name": "TienSuBenhBanThan",
+      "status": "NOT_MENTIONED",
+      "value": null,
+      "source_fact_ids": [],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    },
+    {
+      "field_id": "3.4",
+      "technical_name": "TienSuBenhGiaDinh",
+      "status": "NOT_MENTIONED",
+      "value": null,
+      "source_fact_ids": [],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    }
+  ]
+}

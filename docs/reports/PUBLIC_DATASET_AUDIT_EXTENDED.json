@@ -1,0 +1,136 @@
+{
+  "synur": {
+    "schema_concepts": 193,
+    "schema_value_types": {
+      "SINGLE_SELECT": 130,
+      "STRING": 31,
+      "MULTI_SELECT": 12,
+      "NUMERIC": 20
+    },
+    "train": {
+      "rows": 122,
+      "unique_concepts_observed": 166,
+      "mean_observations_per_row": 13.811475409836065,
+      "median_observations_per_row": 13.0,
+      "min_observations_per_row": 6,
+      "max_observations_per_row": 34,
+      "mean_transcript_chars": 1188.1475409836066,
+      "min_transcript_chars": 636,
+      "max_transcript_chars": 1919,
+      "observation_value_types": {
+        "SINGLE_SELECT": 1200,
+        "STRING": 108,
+        "MULTI_SELECT": 195,
+        "NUMERIC": 182
+      }
+    },
+    "dev": {
+      "rows": 101,
+      "unique_concepts_observed": 170,
+      "mean_observations_per_row": 13.01980198019802,
+      "median_observations_per_row": 12,
+      "min_observations_per_row": 7,
+      "max_observations_per_row": 33,
+      "mean_transcript_chars": 1198.5247524752476,
+      "min_transcript_chars": 351,
+      "max_transcript_chars": 1866,
+      "observation_value_types": {
+        "SINGLE_SELECT": 951,
+        "NUMERIC": 137,
+        "MULTI_SELECT": 157,
+        "STRING": 70
+      }
+    },
+    "test": {
+      "rows": 199,
+      "unique_concepts_observed": 164,
+      "mean_observations_per_row": 12.824120603015075,
+      "median_observations_per_row": 12,
+      "min_observations_per_row": 4,
+      "max_observations_per_row": 29,
+      "mean_transcript_chars": 1127.3618090452262,
+      "min_transcript_chars": 502,
+      "max_transcript_chars": 1992,
+      "observation_value_types": {
+        "SINGLE_SELECT": 1853,
+        "NUMERIC": 257,
+        "STRING": 98,
+        "MULTI_SELECT": 344
+      }
+    }
+  },
+  "mts_dialog": {
+    "MTS-Dialog-TestSet-1-MEDIQA-Chat-2023.csv": {
+      "rows_total": 200,
+      "rows_previsit": 173,
+      "previsit_share": 0.865,
+      "previsit_sections": {
+        "genhx": 53,
+        "fam/sochx": 45,
+        "ros": 17,
+        "allergy": 12,
+        "pastsurgical": 7,
+        "cc": 11,
+        "pastmedicalhx": 14,
+        "other_history": 3,
+        "medications": 10,
+        "gynhx": 1
+      },
+      "mean_dialogue_chars": 580.3699421965318
+    },
+    "MTS-Dialog-TestSet-2-MEDIQA-Sum-2023.csv": {
+      "rows_total": 200,
+      "rows_previsit": 166,
+      "previsit_share": 0.83,
+      "previsit_sections": {
+        "cc": 13,
+        "fam/sochx": 47,
+        "genhx": 37,
+        "allergy": 8,
+        "pastmedicalhx": 32,
+        "ros": 10,
+        "pastsurgical": 8,
+        "medications": 9,
+        "gynhx": 1,
+        "other_history": 1
+      },
+      "mean_dialogue_chars": 644.4457831325301
+    },
+    "MTS-Dialog-TrainingSet.csv": {
+      "rows_total": 1201,
+      "rows_previsit": 1072,
+      "previsit_share": 0.8925895087427144,
+      "previsit_sections": {
+        "genhx": 282,
+        "medications": 54,
+        "cc": 77,
+        "pastmedicalhx": 118,
+        "allergy": 60,
+        "fam/sochx": 351,
+        "pastsurgical": 63,
+        "other_history": 2,
+        "ros": 60,
+        "gynhx": 5
+      },
+      "mean_dialogue_chars": 633.4048507462686
+    },
+    "MTS-Dialog-ValidationSet.csv": {
+      "rows_total": 100,
+      "rows_previsit": 82,
+      "previsit_share": 0.82,
+      "previsit_sections": {
+        "genhx": 20,
+        "ros": 11,
+        "pastmedicalhx": 4,
+        "medications": 7,
+        "cc": 4,
+        "pastsurgical": 8,
+        "fam/sochx": 22,
+        "allergy": 4,
+        "gynhx": 1,
+        "other_history": 1
+      },
+      "mean_dialogue_chars": 527.8170731707318
+    }
+  }
+}

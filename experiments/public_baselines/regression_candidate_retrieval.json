@@ -1,0 +1,14 @@
+{
+  "5": {
+    "mean_gold_recall": 0.9,
+    "all_gold_covered_cases": 0.9
+  },
+  "10": {
+    "mean_gold_recall": 0.9,
+    "all_gold_covered_cases": 0.9
+  },
+  "20": {
+    "mean_gold_recall": 1.0,
+    "all_gold_covered_cases": 1.0
+  }
+}

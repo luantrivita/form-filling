@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "hard_fail": [
+    "invalid_json_schema",
+    "unknown_concept_id",
+    "invalid_enum_value",
+    "duplicate_turn_id",
+    "evidence_turn_missing",
+    "base_case_id_mismatch",
+    "major_fact_contradiction",
+    "new_diagnosis_or_treatment_not_in_gold",
+    "clinician_only_finding_invented"
+  ],
+  "review_flags": [
+    "extra_minor_fact",
+    "ambiguous_evidence_span",
+    "unnatural_dialogue",
+    "possible_temporality_drift",
+    "possible_negation_drift"
+  ],
+  "split_rule": "Split by base_case_id before generating variants."
+}

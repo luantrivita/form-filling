@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1.0",
+  "generation_controls": {
+    "length_tier": "SHORT",
+    "scenario_tags": [
+      "uncertain"
+    ],
+    "allowed_speakers": [
+      "INTAKE_ASSISTANT",
+      "PATIENT"
+    ],
+    "style": "natural",
+    "max_extra_minor_facts": 0
+  },
+  "fact_graph": {
+    "base_case_id": "base_reg_05",
+    "registry_version": "0.1.0",
+    "facts": [
+      {
+        "fact_id": "f1",
+        "concept_id": "RESP.DYSPNEA",
+        "value": "MILD",
+        "unit": null,
+        "assertion": "UNCERTAIN",
+        "temporality": "CURRENT",
+        "clinical_status": "UNKNOWN",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": ""
+      }
+    ],
+    "forbidden_major_facts": [
+      "new diagnosis",
+      "new treatment",
+      "unprovided exam finding"
+    ],
+    "case_notes": "uncertain assertion"
+  },
+  "conversation": {
+    "conversation_id": "conv_reg_05",
+    "base_case_id": "base_reg_05",
+    "language": "vi",
+    "turns": [
+      {
+        "turn_id": 1,
+        "speaker": "INTAKE_ASSISTANT",
+        "text": "Chị có thấy khó thở hay hụt hơi không?"
+      },
+      {
+        "turn_id": 2,
+        "speaker": "PATIENT",
+        "text": "Tôi không chắc có gọi là khó thở không, thỉnh thoảng thấy hơi hụt hơi."
+      }
+    ],
+    "metadata": {
+      "synthetic": true,
+      "generator_version": "manual_regression_v0.1",
+      "prompt_version": "manual",
+      "registry_version": "0.1.0",
+      "schema_version": "0.1.0",
+      "seed": 5
+    }
+  },
+  "evidence_alignment": {
+    "conversation_id": "conv_reg_05",
+    "alignments": [
+      {
+        "fact_id": "f1",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 0,
+            "end_char": 70,
+            "text": "Tôi không chắc có gọi là khó thở không, thỉnh thoảng thấy hơi hụt hơi."
+          }
+        ],
+        "supported": true,
+        "notes": ""
+      }
+    ]
+  }
+}

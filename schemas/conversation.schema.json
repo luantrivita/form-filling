@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "conversation.schema.json",
+  "title": "ESF Synthetic Conversation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "conversation_id",
+    "base_case_id",
+    "language",
+    "turns",
+    "metadata"
+  ],
+  "properties": {
+    "conversation_id": {
+      "type": "string"
+    },
+    "base_case_id": {
+      "type": "string"
+    },
+    "language": {
+      "enum": [
+        "vi",
+        "vi-en",
+        "en"
+      ]
+    },
+    "turns": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "turn_id",
+          "speaker",
+          "text"
+        ],
+        "properties": {
+          "turn_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "speaker": {
+            "enum": [
+              "INTAKE_ASSISTANT",
+              "PATIENT",
+              "CAREGIVER"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "synthetic",
+        "generator_version",
+        "prompt_version",
+        "registry_version",
+        "schema_version"
+      ],
+      "properties": {
+        "synthetic": {
+          "const": true
+        },
+        "generator_version": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        },
+        "registry_version": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

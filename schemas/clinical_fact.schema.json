@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clinical_fact.schema.json",
+  "title": "ESF Clinical Fact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fact_id",
+    "concept_id",
+    "value",
+    "assertion",
+    "temporality",
+    "clinical_status",
+    "experiencer",
+    "must_mention"
+  ],
+  "properties": {
+    "fact_id": {
+      "type": "string"
+    },
+    "concept_id": {
+      "type": "string"
+    },
+    "value": {},
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "assertion": {
+      "enum": [
+        "POSITIVE",
+        "NEGATIVE",
+        "UNCERTAIN"
+      ]
+    },
+    "temporality": {
+      "enum": [
+        "CURRENT",
+        "HISTORICAL",
+        "RESOLVED",
+        "UNKNOWN"
+      ]
+    },
+    "clinical_status": {
+      "enum": [
+        "ACTIVE",
+        "INACTIVE",
+        "RESOLVED",
+        "UNKNOWN"
+      ]
+    },
+    "experiencer": {
+      "enum": [
+        "PATIENT",
+        "FAMILY_MEMBER",
+        "OTHER"
+      ]
+    },
+    "must_mention": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

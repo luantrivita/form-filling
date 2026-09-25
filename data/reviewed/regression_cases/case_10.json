@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.1.0",
+  "generation_controls": {
+    "length_tier": "SHORT",
+    "scenario_tags": [
+      "caregiver_report"
+    ],
+    "allowed_speakers": [
+      "INTAKE_ASSISTANT",
+      "CAREGIVER"
+    ],
+    "style": "natural",
+    "max_extra_minor_facts": 0
+  },
+  "fact_graph": {
+    "base_case_id": "base_reg_10",
+    "registry_version": "0.1.0",
+    "facts": [
+      {
+        "fact_id": "f1",
+        "concept_id": "ENCOUNTER.CHIEF_COMPLAINT",
+        "value": "khó thở từ sáng",
+        "unit": null,
+        "assertion": "POSITIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "ACTIVE",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": ""
+      },
+      {
+        "fact_id": "f2",
+        "concept_id": "RESP.DYSPNEA",
+        "value": "MILD",
+        "unit": null,
+        "assertion": "POSITIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "ACTIVE",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": ""
+      }
+    ],
+    "forbidden_major_facts": [
+      "new diagnosis",
+      "new treatment",
+      "unprovided exam finding"
+    ],
+    "case_notes": "caregiver reports patient symptoms"
+  },
+  "conversation": {
+    "conversation_id": "conv_reg_10",
+    "base_case_id": "base_reg_10",
+    "language": "vi",
+    "turns": [
+      {
+        "turn_id": 1,
+        "speaker": "INTAKE_ASSISTANT",
+        "text": "Cô có thể cho biết hôm nay bác có triệu chứng gì không?"
+      },
+      {
+        "turn_id": 2,
+        "speaker": "CAREGIVER",
+        "text": "Ba tôi nói từ sáng thấy hơi khó thở, nhưng vẫn nói chuyện bình thường."
+      }
+    ],
+    "metadata": {
+      "synthetic": true,
+      "generator_version": "manual_regression_v0.1",
+      "prompt_version": "manual",
+      "registry_version": "0.1.0",
+      "schema_version": "0.1.0",
+      "seed": 10
+    }
+  },
+  "evidence_alignment": {
+    "conversation_id": "conv_reg_10",
+    "alignments": [
+      {
+        "fact_id": "f1",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 0,
+            "end_char": 70,
+            "text": "Ba tôi nói từ sáng thấy hơi khó thở, nhưng vẫn nói chuyện bình thường."
+          }
+        ],
+        "supported": true,
+        "notes": ""
+      },
+      {
+        "fact_id": "f2",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 0,
+            "end_char": 70,
+            "text": "Ba tôi nói từ sáng thấy hơi khó thở, nhưng vẫn nói chuyện bình thường."
+          }
+        ],
+        "supported": true,
+        "notes": ""
+      }
+    ]
+  }
+}

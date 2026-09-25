@@ -1,0 +1,18 @@
+{
+  "graphify": {
+    "repository": "https://github.com/Graphify-Labs/graphify.git",
+    "path": "tools/upstreams/graphify",
+    "branch": "v8",
+    "commit": "4c735618f3d56fd622c2049771584621c31ba9ff",
+    "package": "graphifyy",
+    "version": "0.9.67"
+  },
+  "codegraph": {
+    "repository": "https://github.com/colbymchenry/codegraph.git",
+    "path": "tools/upstreams/codegraph",
+    "branch": "main",
+    "commit": "ba3c21e50d9129d2f5f3843ec3728868ae6d47a1",
+    "package": "@colbymchenry/codegraph",
+    "version": "1.6.0"
+  }
+}

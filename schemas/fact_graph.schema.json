@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fact_graph.schema.json",
+  "title": "ESF Gold Fact Graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "base_case_id",
+    "registry_version",
+    "facts"
+  ],
+  "properties": {
+    "base_case_id": {
+      "type": "string"
+    },
+    "registry_version": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "clinical_fact.schema.json"
+      }
+    },
+    "forbidden_major_facts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "case_notes": {
+      "type": "string"
+    }
+  }
+}

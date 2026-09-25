@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1.0",
+  "generation_controls": {
+    "length_tier": "SHORT",
+    "scenario_tags": [
+      "code_switch"
+    ],
+    "allowed_speakers": [
+      "INTAKE_ASSISTANT",
+      "PATIENT"
+    ],
+    "style": "mixed",
+    "max_extra_minor_facts": 0
+  },
+  "fact_graph": {
+    "base_case_id": "base_reg_09",
+    "registry_version": "0.1.0",
+    "facts": [
+      {
+        "fact_id": "f1",
+        "concept_id": "RESP.DYSPNEA",
+        "value": "MILD",
+        "unit": null,
+        "assertion": "POSITIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "ACTIVE",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": ""
+      }
+    ],
+    "forbidden_major_facts": [
+      "new diagnosis",
+      "new treatment",
+      "unprovided exam finding"
+    ],
+    "case_notes": "Vietnamese-English code switch"
+  },
+  "conversation": {
+    "conversation_id": "conv_reg_09",
+    "base_case_id": "base_reg_09",
+    "language": "vi-en",
+    "turns": [
+      {
+        "turn_id": 1,
+        "speaker": "INTAKE_ASSISTANT",
+        "text": "Dạo này chị có vấn đề gì khi thở không?"
+      },
+      {
+        "turn_id": 2,
+        "speaker": "PATIENT",
+        "text": "Sometimes I get shortness of breath, nhưng chỉ hơi nhẹ thôi."
+      }
+    ],
+    "metadata": {
+      "synthetic": true,
+      "generator_version": "manual_regression_v0.1",
+      "prompt_version": "manual",
+      "registry_version": "0.1.0",
+      "schema_version": "0.1.0",
+      "seed": 9
+    }
+  },
+  "evidence_alignment": {
+    "conversation_id": "conv_reg_09",
+    "alignments": [
+      {
+        "fact_id": "f1",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 0,
+            "end_char": 60,
+            "text": "Sometimes I get shortness of breath, nhưng chỉ hơi nhẹ thôi."
+          }
+        ],
+        "supported": true,
+        "notes": ""
+      }
+    ]
+  }
+}

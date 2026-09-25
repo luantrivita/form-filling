@@ -1,0 +1,122 @@
+{
+  "version": "0.2",
+  "source": "DacTaEMR-TT32 technical specification",
+  "mappings": [
+    {
+      "form_id": "MOH_29_BV_02",
+      "field_id": "5.2",
+      "technical_name": "LyDoVaoVien",
+      "concept_refs": [
+        "ENCOUNTER.REASON_FOR_VISIT",
+        "ENCOUNTER.CHIEF_COMPLAINT"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    },
+    {
+      "form_id": "MOH_29_BV_02",
+      "field_id": "5.3",
+      "technical_name": "QuaTrinhBenhLi",
+      "concept_refs": [
+        "HPI.SUMMARY",
+        "HPI.ONSET",
+        "HPI.DURATION",
+        "HPI.COURSE",
+        "HPI.SEVERITY",
+        "HPI.LOCATION",
+        "HPI.CHARACTER",
+        "HPI.FREQUENCY",
+        "HPI.AGGRAVATING_FACTOR",
+        "HPI.RELIEVING_FACTOR",
+        "HPI.ASSOCIATED_SYMPTOM"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    },
+    {
+      "form_id": "MOH_29_BV_02",
+      "field_id": "5.4",
+      "technical_name": "TienSuBenhBanThan",
+      "concept_refs": [
+        "HISTORY.CHRONIC_CONDITION",
+        "HISTORY.PAST_CONDITION",
+        "HISTORY.HOSPITALIZATION",
+        "HISTORY.SURGERY"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    },
+    {
+      "form_id": "MOH_29_BV_02",
+      "field_id": "5.5",
+      "technical_name": "TienSuBenhGiaDinh",
+      "concept_refs": [
+        "HISTORY.FAMILY_CONDITION"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    },
+    {
+      "form_id": "MOH_15_BV_01",
+      "field_id": "3.1",
+      "technical_name": "LyDoVaoVien",
+      "concept_refs": [
+        "ENCOUNTER.REASON_FOR_VISIT",
+        "ENCOUNTER.CHIEF_COMPLAINT"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    },
+    {
+      "form_id": "MOH_15_BV_01",
+      "field_id": "3.2",
+      "technical_name": "QuaTrinhBenhLy",
+      "concept_refs": [
+        "HPI.SUMMARY",
+        "HPI.ONSET",
+        "HPI.DURATION",
+        "HPI.COURSE",
+        "HPI.SEVERITY",
+        "HPI.LOCATION",
+        "HPI.CHARACTER",
+        "HPI.FREQUENCY",
+        "HPI.AGGRAVATING_FACTOR",
+        "HPI.RELIEVING_FACTOR",
+        "HPI.ASSOCIATED_SYMPTOM"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    },
+    {
+      "form_id": "MOH_15_BV_01",
+      "field_id": "3.3",
+      "technical_name": "TienSuBenhBanThan",
+      "concept_refs": [
+        "HISTORY.CHRONIC_CONDITION",
+        "HISTORY.PAST_CONDITION",
+        "HISTORY.HOSPITALIZATION",
+        "HISTORY.SURGERY"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    },
+    {
+      "form_id": "MOH_15_BV_01",
+      "field_id": "3.4",
+      "technical_name": "TienSuBenhGiaDinh",
+      "concept_refs": [
+        "HISTORY.FAMILY_CONDITION"
+      ],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "review_status": "DRAFT_RESEARCH_MAPPING",
+      "note": "Official technical spec defines target field; canonical decomposition is a research design layer."
+    }
+  ]
+}

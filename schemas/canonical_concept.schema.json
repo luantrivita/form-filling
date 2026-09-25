@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "canonical_concept.schema.json",
+  "title": "ESF Canonical Concept",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "concept_id",
+    "canonical_name",
+    "labels",
+    "value_type",
+    "input_scope",
+    "supports_negation",
+    "supports_temporality",
+    "schema_version"
+  ],
+  "properties": {
+    "concept_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_.-]+$"
+    },
+    "canonical_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "labels": {
+      "type": "object",
+      "required": [
+        "vi"
+      ],
+      "properties": {
+        "vi": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "value_type": {
+      "enum": [
+        "BOOLEAN",
+        "SINGLE_SELECT",
+        "MULTI_SELECT",
+        "STRING",
+        "NUMERIC",
+        "DATE",
+        "DATETIME",
+        "DURATION",
+        "REPEATED_OBJECT",
+        "STRUCTURED_OBJECT"
+      ]
+    },
+    "allowed_values": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "number",
+          "boolean"
+        ]
+      }
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "input_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "PATIENT_REPORTED",
+          "CAREGIVER_REPORTED",
+          "HIS",
+          "MEASURED",
+          "CLINICIAN_ONLY"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "supports_negation": {
+      "type": "boolean"
+    },
+    "supports_temporality": {
+      "type": "boolean"
+    },
+    "regulatory_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schema_version": {
+      "type": "string"
+    }
+  }
+}

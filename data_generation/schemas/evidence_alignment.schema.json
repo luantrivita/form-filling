@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evidence_alignment.schema.json",
+  "title": "ESF Evidence Alignment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "conversation_id",
+    "alignments"
+  ],
+  "properties": {
+    "conversation_id": {
+      "type": "string"
+    },
+    "alignments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "fact_id",
+          "turn_ids",
+          "supported"
+        ],
+        "properties": {
+          "fact_id": {
+            "type": "string"
+          },
+          "turn_ids": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "uniqueItems": true
+          },
+          "spans": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "turn_id",
+                "text"
+              ],
+              "properties": {
+                "turn_id": {
+                  "type": "integer"
+                },
+                "start_char": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "end_char": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "supported": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

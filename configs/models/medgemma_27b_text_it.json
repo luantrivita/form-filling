@@ -1,0 +1,21 @@
+{
+  "id": "medgemma_27b_text_it",
+  "hf_model": "google/medgemma-27b-text-it",
+  "family": "gemma3_text",
+  "role": "teacher_candidate",
+  "license": "health-ai-developer-foundations",
+  "gated": true,
+  "parameters_b": 27,
+  "context_length": 128000,
+  "recommended_dtype": "bfloat16",
+  "benchmark_mode": "instruction",
+  "generation": {
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "serving": {
+    "engine": "vllm",
+    "tensor_parallel_size": 2,
+    "extra_args": []
+  }
+}

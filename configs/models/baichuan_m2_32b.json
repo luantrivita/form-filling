@@ -1,0 +1,20 @@
+{
+  "id": "baichuan_m2_32b",
+  "hf_model": "baichuan-inc/Baichuan-M2-32B",
+  "family": "qwen2_dense_medical",
+  "role": "teacher_candidate",
+  "license": "apache-2.0",
+  "parameters_b": 33,
+  "context_length": 131072,
+  "recommended_dtype": "bfloat16",
+  "benchmark_mode": "medical_reasoning",
+  "generation": {
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "serving": {
+    "engine": "vllm",
+    "tensor_parallel_size": 2,
+    "extra_args": []
+  }
+}

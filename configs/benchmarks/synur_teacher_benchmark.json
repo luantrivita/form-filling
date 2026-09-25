@@ -1,0 +1,24 @@
+{
+  "dataset": "microsoft/SYNUR",
+  "selection_split": "dev",
+  "locked_final_split": "test",
+  "modes": ["full_schema", "retrieval_top50"],
+  "retrieval_k": 50,
+  "temperature": 0.0,
+  "max_tokens": 4096,
+  "primary_metrics": [
+    "micro_concept_f1",
+    "macro_concept_f1",
+    "typed_value_accuracy",
+    "exact_observation_match_rate",
+    "unsupported_fill_rate",
+    "schema_valid_rate"
+  ],
+  "secondary_metrics": [
+    "exact_concept_set_rate",
+    "latency_p50_seconds",
+    "latency_p95_seconds",
+    "output_tokens_mean"
+  ],
+  "selection_policy": "Select teacher on DEV only. Run TEST once after prompt/config freeze. No model is selected by medical QA benchmarks alone."
+}

@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "value_sets": {
+    "severity_4": [
+      "NONE",
+      "MILD",
+      "MODERATE",
+      "SEVERE"
+    ],
+    "assertion": [
+      "POSITIVE",
+      "NEGATIVE",
+      "UNCERTAIN"
+    ],
+    "temporality": [
+      "CURRENT",
+      "HISTORICAL",
+      "RESOLVED",
+      "UNKNOWN"
+    ]
+  }
+}

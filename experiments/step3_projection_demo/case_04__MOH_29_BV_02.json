@@ -1,0 +1,41 @@
+{
+  "form_id": "MOH_29_BV_02",
+  "fields": [
+    {
+      "field_id": "5.2",
+      "technical_name": "LyDoVaoVien",
+      "status": "NOT_MENTIONED",
+      "value": null,
+      "source_fact_ids": [],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    },
+    {
+      "field_id": "5.3",
+      "technical_name": "QuaTrinhBenhLi",
+      "status": "NOT_MENTIONED",
+      "value": null,
+      "source_fact_ids": [],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    },
+    {
+      "field_id": "5.4",
+      "technical_name": "TienSuBenhBanThan",
+      "status": "NOT_MENTIONED",
+      "value": null,
+      "source_fact_ids": [],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    },
+    {
+      "field_id": "5.5",
+      "technical_name": "TienSuBenhGiaDinh",
+      "status": "NOT_MENTIONED",
+      "value": null,
+      "source_fact_ids": [],
+      "projection_type": "STRUCTURED_TO_NARRATIVE",
+      "renderer_status": "DRAFT_RESEARCH_RENDERER"
+    }
+  ]
+}

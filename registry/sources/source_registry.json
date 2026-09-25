@@ -1,0 +1,93 @@
+[
+  {
+    "source_id": "MOH_TT32_2023",
+    "title": "Thông tư 32/2023/TT-BYT",
+    "authority": "Bộ Y tế",
+    "source_type": "REGULATION",
+    "status": "OFFICIAL",
+    "url": "https://vbpl.vn/boyte/Pages/vbpq-thuoctinh.aspx?ItemID=167907",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "URL_VERIFIED"
+  },
+  {
+    "source_id": "MOH_29_BV_02",
+    "title": "Phiếu khám bệnh vào viện (chung) — MS 29/BV-02",
+    "authority": "Bộ Y tế",
+    "source_type": "FORM",
+    "status": "OFFICIAL",
+    "url": "https://thuvienphapluat.vn/bieumau/27372/MAU-PHIEU-KHAM-BENH-VAO-VIEN-CHUNG",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "WEB_VERIFIED"
+  },
+  {
+    "source_id": "MOH_15_BV_01",
+    "title": "Bệnh án ngoại trú chung — MS 15/BV-01",
+    "authority": "Bộ Y tế",
+    "source_type": "FORM",
+    "status": "OFFICIAL",
+    "url": "https://thuvienphapluat.vn/bieumau/27319/MAU-BENH-AN-NGOAI-TRU-CHUNG",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "WEB_VERIFIED"
+  },
+  {
+    "source_id": "TTYQG_CV292_2026",
+    "title": "Công văn 292/TTYQG-DA — hướng dẫn đặc tả cấu trúc thông tin TT32",
+    "authority": "Trung tâm Thông tin Y tế Quốc gia",
+    "source_type": "TECHNICAL_GUIDANCE",
+    "status": "TECHNICAL_GUIDANCE",
+    "url": "https://dongnaicdc.vn/UserFiles/Docs/2026/VBBYT/CV%20h%20%20ng%20d%20n%20b%20nh%20%C3%A1n%20%20i%20n%20t%20.signed.pdf",
+    "attachment_url": "https://dongnaicdc.vn/UserFiles/Docs/2026/VBBYT/DacTaEMR-TT32.rar",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "PDF_VERIFIED_ATTACHMENT_UPLOAD_NEEDED"
+  },
+  {
+    "source_id": "MOH_TT51_2017",
+    "title": "Thông tư 51/2017/TT-BYT — phản vệ",
+    "authority": "Bộ Y tế",
+    "source_type": "REGULATION",
+    "status": "OFFICIAL",
+    "url": "https://vbpl.vn/boyte/Pages/vbpq-van-ban-goc.aspx?ItemID=128248",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "URL_VERIFIED"
+  },
+  {
+    "source_id": "MOH_QD2805_2025",
+    "title": "Quyết định 2805/QĐ-BYT — Danh mục mã dùng chung thuật ngữ y học lâm sàng Đợt 3",
+    "authority": "Bộ Y tế",
+    "source_type": "TERMINOLOGY",
+    "status": "OFFICIAL",
+    "url": "https://thuvienphapluat.vn/van-ban/The-thao-Y-te/Quyet-dinh-2805-QD-BYT-2025-Danh-muc-ma-dung-chung-thuat-ngu-y-hoc-lam-sang-Dot-3-672318.aspx",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "URL_VERIFIED"
+  },
+  {
+    "source_id": "TTYQG_CV365_2025",
+    "title": "Công văn 365/TTYQG-GPQLCL — yêu cầu kỹ thuật EMR",
+    "authority": "Trung tâm Thông tin Y tế Quốc gia",
+    "source_type": "TECHNICAL_GUIDANCE",
+    "status": "TECHNICAL_GUIDANCE",
+    "url": "https://thuvienphapluat.vn/cong-van/Cong-nghe-thong-tin/Cong-van-365-TTYQG-GPQLCL-2025-yeu-cau-ky-thuat-trien-khai-phan-mem-ho-so-benh-an-dien-tu-671468.aspx",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "URL_VERIFIED"
+  },
+  {
+    "source_id": "DATASET_SYNUR",
+    "title": "Microsoft SYNUR",
+    "authority": "Microsoft Research",
+    "source_type": "DATASET",
+    "status": "RESEARCH_ONLY",
+    "url": "https://huggingface.co/datasets/microsoft/SYNUR",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "REPOSITORY_VERIFIED"
+  },
+  {
+    "source_id": "DATASET_MTS_DIALOG",
+    "title": "MTS-Dialog",
+    "authority": "Ben Abacha et al.",
+    "source_type": "DATASET",
+    "status": "RESEARCH_ONLY",
+    "url": "https://github.com/abachaa/MTS-Dialog",
+    "retrieved_at": "2026-09-25",
+    "retrieval_status": "REPOSITORY_VERIFIED"
+  }
+]

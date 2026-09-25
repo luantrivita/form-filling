@@ -1,0 +1,152 @@
+[
+  {
+    "case": "case_01",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 1,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 1,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_02",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_03",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_04",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_05",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_06",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_07",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_08",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_09",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 0,
+        "conflict_fields": 0
+      }
+    }
+  },
+  {
+    "case": "case_10",
+    "forms": {
+      "MOH_29_BV_02": {
+        "validation_errors": [],
+        "supported_fields": 1,
+        "conflict_fields": 0
+      },
+      "MOH_15_BV_01": {
+        "validation_errors": [],
+        "supported_fields": 1,
+        "conflict_fields": 0
+      }
+    }
+  }
+]

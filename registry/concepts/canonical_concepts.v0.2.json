@@ -1,0 +1,1750 @@
+{
+  "version": "0.2",
+  "status": "DRAFT_RESEARCH_DESIGN",
+  "concept_count": 83,
+  "concepts": [
+    {
+      "concept_id": "ENCOUNTER.REASON_FOR_VISIT",
+      "canonical_name": "Reason for visit",
+      "labels": {
+        "vi": "Lý do khám/vào viện",
+        "en": "Reason for visit"
+      },
+      "aliases": [],
+      "description": "Lý do khám/vào viện",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ENCOUNTER.CHIEF_COMPLAINT",
+      "canonical_name": "Chief complaint",
+      "labels": {
+        "vi": "Vấn đề chính",
+        "en": "Chief complaint"
+      },
+      "aliases": [],
+      "description": "Vấn đề chính",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.SUMMARY",
+      "canonical_name": "HPI summary",
+      "labels": {
+        "vi": "Tóm tắt bệnh sử hiện tại",
+        "en": "HPI summary"
+      },
+      "aliases": [],
+      "description": "Tóm tắt bệnh sử hiện tại",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.ONSET",
+      "canonical_name": "Onset",
+      "labels": {
+        "vi": "Khởi phát",
+        "en": "Onset"
+      },
+      "aliases": [],
+      "description": "Khởi phát",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.DURATION",
+      "canonical_name": "Duration",
+      "labels": {
+        "vi": "Thời gian kéo dài",
+        "en": "Duration"
+      },
+      "aliases": [],
+      "description": "Thời gian kéo dài",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "DURATION",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.COURSE",
+      "canonical_name": "Course",
+      "labels": {
+        "vi": "Diễn tiến",
+        "en": "Course"
+      },
+      "aliases": [],
+      "description": "Diễn tiến",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.SEVERITY",
+      "canonical_name": "Severity",
+      "labels": {
+        "vi": "Mức độ",
+        "en": "Severity"
+      },
+      "aliases": [],
+      "description": "Mức độ",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "SINGLE_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.LOCATION",
+      "canonical_name": "Location",
+      "labels": {
+        "vi": "Vị trí",
+        "en": "Location"
+      },
+      "aliases": [],
+      "description": "Vị trí",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.CHARACTER",
+      "canonical_name": "Character",
+      "labels": {
+        "vi": "Tính chất",
+        "en": "Character"
+      },
+      "aliases": [],
+      "description": "Tính chất",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.FREQUENCY",
+      "canonical_name": "Frequency",
+      "labels": {
+        "vi": "Tần suất",
+        "en": "Frequency"
+      },
+      "aliases": [],
+      "description": "Tần suất",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.AGGRAVATING_FACTOR",
+      "canonical_name": "Aggravating factor",
+      "labels": {
+        "vi": "Yếu tố làm nặng",
+        "en": "Aggravating factor"
+      },
+      "aliases": [],
+      "description": "Yếu tố làm nặng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.RELIEVING_FACTOR",
+      "canonical_name": "Relieving factor",
+      "labels": {
+        "vi": "Yếu tố làm giảm",
+        "en": "Relieving factor"
+      },
+      "aliases": [],
+      "description": "Yếu tố làm giảm",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.ASSOCIATED_SYMPTOM",
+      "canonical_name": "Associated symptom",
+      "labels": {
+        "vi": "Triệu chứng đi kèm",
+        "en": "Associated symptom"
+      },
+      "aliases": [],
+      "description": "Triệu chứng đi kèm",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.PREVIOUS_CARE",
+      "canonical_name": "Previous care",
+      "labels": {
+        "vi": "Đã khám/xử trí trước đó",
+        "en": "Previous care"
+      },
+      "aliases": [],
+      "description": "Đã khám/xử trí trước đó",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HPI.RESPONSE_TO_TREATMENT",
+      "canonical_name": "Response to treatment",
+      "labels": {
+        "vi": "Đáp ứng xử trí trước",
+        "en": "Response to treatment"
+      },
+      "aliases": [],
+      "description": "Đáp ứng xử trí trước",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HISTORY.CHRONIC_CONDITION",
+      "canonical_name": "Chronic condition",
+      "labels": {
+        "vi": "Bệnh nền",
+        "en": "Chronic condition"
+      },
+      "aliases": [],
+      "description": "Bệnh nền",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HISTORY.PAST_CONDITION",
+      "canonical_name": "Past condition",
+      "labels": {
+        "vi": "Bệnh đã mắc",
+        "en": "Past condition"
+      },
+      "aliases": [],
+      "description": "Bệnh đã mắc",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HISTORY.HOSPITALIZATION",
+      "canonical_name": "Hospitalization history",
+      "labels": {
+        "vi": "Tiền sử nhập viện",
+        "en": "Hospitalization history"
+      },
+      "aliases": [],
+      "description": "Tiền sử nhập viện",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HISTORY.SURGERY",
+      "canonical_name": "Surgical history",
+      "labels": {
+        "vi": "Tiền sử phẫu thuật",
+        "en": "Surgical history"
+      },
+      "aliases": [],
+      "description": "Tiền sử phẫu thuật",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "HISTORY.FAMILY_CONDITION",
+      "canonical_name": "Family history",
+      "labels": {
+        "vi": "Tiền sử gia đình",
+        "en": "Family history"
+      },
+      "aliases": [],
+      "description": "Tiền sử gia đình",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "MEDICATION.CURRENT",
+      "canonical_name": "Current medication",
+      "labels": {
+        "vi": "Thuốc đang dùng",
+        "en": "Current medication"
+      },
+      "aliases": [],
+      "description": "Thuốc đang dùng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "REPEATED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "MEDICATION.DOSE",
+      "canonical_name": "Medication dose",
+      "labels": {
+        "vi": "Liều thuốc",
+        "en": "Medication dose"
+      },
+      "aliases": [],
+      "description": "Liều thuốc",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "MEDICATION.FREQUENCY",
+      "canonical_name": "Medication frequency",
+      "labels": {
+        "vi": "Tần suất dùng thuốc",
+        "en": "Medication frequency"
+      },
+      "aliases": [],
+      "description": "Tần suất dùng thuốc",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "MEDICATION.ADHERENCE",
+      "canonical_name": "Medication adherence",
+      "labels": {
+        "vi": "Tuân thủ thuốc",
+        "en": "Medication adherence"
+      },
+      "aliases": [],
+      "description": "Tuân thủ thuốc",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "SINGLE_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ALLERGY.DRUG",
+      "canonical_name": "Drug allergy",
+      "labels": {
+        "vi": "Dị ứng thuốc",
+        "en": "Drug allergy"
+      },
+      "aliases": [],
+      "description": "Dị ứng thuốc",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "REPEATED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ALLERGY.FOOD",
+      "canonical_name": "Food allergy",
+      "labels": {
+        "vi": "Dị ứng thực phẩm",
+        "en": "Food allergy"
+      },
+      "aliases": [],
+      "description": "Dị ứng thực phẩm",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "REPEATED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ALLERGY.INSECT",
+      "canonical_name": "Insect allergy",
+      "labels": {
+        "vi": "Dị ứng côn trùng",
+        "en": "Insect allergy"
+      },
+      "aliases": [],
+      "description": "Dị ứng côn trùng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "REPEATED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ALLERGY.OTHER",
+      "canonical_name": "Other allergy",
+      "labels": {
+        "vi": "Dị ứng khác",
+        "en": "Other allergy"
+      },
+      "aliases": [],
+      "description": "Dị ứng khác",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "REPEATED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ALLERGY.REACTION",
+      "canonical_name": "Allergic reaction",
+      "labels": {
+        "vi": "Biểu hiện dị ứng",
+        "en": "Allergic reaction"
+      },
+      "aliases": [],
+      "description": "Biểu hiện dị ứng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ALLERGY.PREVIOUS_MANAGEMENT",
+      "canonical_name": "Previous allergy management",
+      "labels": {
+        "vi": "Xử trí dị ứng trước",
+        "en": "Previous allergy management"
+      },
+      "aliases": [],
+      "description": "Xử trí dị ứng trước",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "SOCIAL.SMOKING",
+      "canonical_name": "Smoking",
+      "labels": {
+        "vi": "Hút thuốc",
+        "en": "Smoking"
+      },
+      "aliases": [],
+      "description": "Hút thuốc",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRUCTURED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "SOCIAL.ALCOHOL",
+      "canonical_name": "Alcohol use",
+      "labels": {
+        "vi": "Rượu bia",
+        "en": "Alcohol use"
+      },
+      "aliases": [],
+      "description": "Rượu bia",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRUCTURED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "SOCIAL.OCCUPATION",
+      "canonical_name": "Occupation",
+      "labels": {
+        "vi": "Nghề nghiệp",
+        "en": "Occupation"
+      },
+      "aliases": [],
+      "description": "Nghề nghiệp",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "SOCIAL.OCCUPATIONAL_EXPOSURE",
+      "canonical_name": "Occupational exposure",
+      "labels": {
+        "vi": "Phơi nhiễm nghề nghiệp",
+        "en": "Occupational exposure"
+      },
+      "aliases": [],
+      "description": "Phơi nhiễm nghề nghiệp",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "MULTI_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GENERAL.FEVER",
+      "canonical_name": "Fever",
+      "labels": {
+        "vi": "Sốt",
+        "en": "Fever"
+      },
+      "aliases": [],
+      "description": "Sốt",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GENERAL.FATIGUE",
+      "canonical_name": "Fatigue",
+      "labels": {
+        "vi": "Mệt mỏi",
+        "en": "Fatigue"
+      },
+      "aliases": [],
+      "description": "Mệt mỏi",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GENERAL.WEIGHT_LOSS",
+      "canonical_name": "Weight loss",
+      "labels": {
+        "vi": "Sụt cân",
+        "en": "Weight loss"
+      },
+      "aliases": [],
+      "description": "Sụt cân",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GENERAL.APPETITE_LOSS",
+      "canonical_name": "Loss of appetite",
+      "labels": {
+        "vi": "Chán ăn",
+        "en": "Loss of appetite"
+      },
+      "aliases": [],
+      "description": "Chán ăn",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "RESP.COUGH",
+      "canonical_name": "Cough",
+      "labels": {
+        "vi": "Ho",
+        "en": "Cough"
+      },
+      "aliases": [],
+      "description": "Ho",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "RESP.DYSPNEA",
+      "canonical_name": "Dyspnea",
+      "labels": {
+        "vi": "Khó thở",
+        "en": "Dyspnea"
+      },
+      "aliases": [],
+      "description": "Khó thở",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "RESP.SPUTUM",
+      "canonical_name": "Sputum",
+      "labels": {
+        "vi": "Khạc đờm",
+        "en": "Sputum"
+      },
+      "aliases": [],
+      "description": "Khạc đờm",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "RESP.HEMOPTYSIS",
+      "canonical_name": "Hemoptysis",
+      "labels": {
+        "vi": "Ho ra máu",
+        "en": "Hemoptysis"
+      },
+      "aliases": [],
+      "description": "Ho ra máu",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "RESP.WHEEZE",
+      "canonical_name": "Wheeze",
+      "labels": {
+        "vi": "Khò khè",
+        "en": "Wheeze"
+      },
+      "aliases": [],
+      "description": "Khò khè",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "CARDIAC.CHEST_PAIN",
+      "canonical_name": "Chest pain",
+      "labels": {
+        "vi": "Đau ngực",
+        "en": "Chest pain"
+      },
+      "aliases": [],
+      "description": "Đau ngực",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "CARDIAC.PALPITATION",
+      "canonical_name": "Palpitation",
+      "labels": {
+        "vi": "Hồi hộp",
+        "en": "Palpitation"
+      },
+      "aliases": [],
+      "description": "Hồi hộp",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "CARDIAC.SYNCOPE",
+      "canonical_name": "Syncope",
+      "labels": {
+        "vi": "Ngất",
+        "en": "Syncope"
+      },
+      "aliases": [],
+      "description": "Ngất",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "CARDIAC.EDEMA",
+      "canonical_name": "Edema",
+      "labels": {
+        "vi": "Phù",
+        "en": "Edema"
+      },
+      "aliases": [],
+      "description": "Phù",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GI.ABDOMINAL_PAIN",
+      "canonical_name": "Abdominal pain",
+      "labels": {
+        "vi": "Đau bụng",
+        "en": "Abdominal pain"
+      },
+      "aliases": [],
+      "description": "Đau bụng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GI.NAUSEA",
+      "canonical_name": "Nausea",
+      "labels": {
+        "vi": "Buồn nôn",
+        "en": "Nausea"
+      },
+      "aliases": [],
+      "description": "Buồn nôn",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GI.VOMITING",
+      "canonical_name": "Vomiting",
+      "labels": {
+        "vi": "Nôn",
+        "en": "Vomiting"
+      },
+      "aliases": [],
+      "description": "Nôn",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GI.DIARRHEA",
+      "canonical_name": "Diarrhea",
+      "labels": {
+        "vi": "Tiêu chảy",
+        "en": "Diarrhea"
+      },
+      "aliases": [],
+      "description": "Tiêu chảy",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GI.CONSTIPATION",
+      "canonical_name": "Constipation",
+      "labels": {
+        "vi": "Táo bón",
+        "en": "Constipation"
+      },
+      "aliases": [],
+      "description": "Táo bón",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GI.GI_BLEEDING",
+      "canonical_name": "GI bleeding",
+      "labels": {
+        "vi": "Xuất huyết tiêu hóa",
+        "en": "GI bleeding"
+      },
+      "aliases": [],
+      "description": "Xuất huyết tiêu hóa",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GU.DYSURIA",
+      "canonical_name": "Dysuria",
+      "labels": {
+        "vi": "Tiểu khó/đau buốt",
+        "en": "Dysuria"
+      },
+      "aliases": [],
+      "description": "Tiểu khó/đau buốt",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GU.URINARY_URGENCY",
+      "canonical_name": "Urinary urgency",
+      "labels": {
+        "vi": "Tiểu gấp",
+        "en": "Urinary urgency"
+      },
+      "aliases": [],
+      "description": "Tiểu gấp",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GU.URINARY_FREQUENCY",
+      "canonical_name": "Urinary frequency",
+      "labels": {
+        "vi": "Tiểu nhiều lần",
+        "en": "Urinary frequency"
+      },
+      "aliases": [],
+      "description": "Tiểu nhiều lần",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GU.HEMATURIA",
+      "canonical_name": "Hematuria",
+      "labels": {
+        "vi": "Tiểu máu",
+        "en": "Hematuria"
+      },
+      "aliases": [],
+      "description": "Tiểu máu",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GU.NOCTURIA",
+      "canonical_name": "Nocturia",
+      "labels": {
+        "vi": "Tiểu đêm",
+        "en": "Nocturia"
+      },
+      "aliases": [],
+      "description": "Tiểu đêm",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "NEURO.HEADACHE",
+      "canonical_name": "Headache",
+      "labels": {
+        "vi": "Đau đầu",
+        "en": "Headache"
+      },
+      "aliases": [],
+      "description": "Đau đầu",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "NEURO.DIZZINESS",
+      "canonical_name": "Dizziness",
+      "labels": {
+        "vi": "Chóng mặt",
+        "en": "Dizziness"
+      },
+      "aliases": [],
+      "description": "Chóng mặt",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "NEURO.WEAKNESS",
+      "canonical_name": "Weakness",
+      "labels": {
+        "vi": "Yếu/liệt",
+        "en": "Weakness"
+      },
+      "aliases": [],
+      "description": "Yếu/liệt",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "NEURO.NUMBNESS",
+      "canonical_name": "Numbness",
+      "labels": {
+        "vi": "Tê bì",
+        "en": "Numbness"
+      },
+      "aliases": [],
+      "description": "Tê bì",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "NEURO.SEIZURE",
+      "canonical_name": "Seizure",
+      "labels": {
+        "vi": "Co giật",
+        "en": "Seizure"
+      },
+      "aliases": [],
+      "description": "Co giật",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "NEURO.CONFUSION",
+      "canonical_name": "Confusion",
+      "labels": {
+        "vi": "Lú lẫn",
+        "en": "Confusion"
+      },
+      "aliases": [],
+      "description": "Lú lẫn",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "MSK.JOINT_PAIN",
+      "canonical_name": "Joint pain",
+      "labels": {
+        "vi": "Đau khớp",
+        "en": "Joint pain"
+      },
+      "aliases": [],
+      "description": "Đau khớp",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "MSK.BACK_PAIN",
+      "canonical_name": "Back pain",
+      "labels": {
+        "vi": "Đau lưng",
+        "en": "Back pain"
+      },
+      "aliases": [],
+      "description": "Đau lưng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "MSK.MUSCLE_PAIN",
+      "canonical_name": "Myalgia",
+      "labels": {
+        "vi": "Đau cơ",
+        "en": "Myalgia"
+      },
+      "aliases": [],
+      "description": "Đau cơ",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ENT.EAR_PAIN",
+      "canonical_name": "Ear pain",
+      "labels": {
+        "vi": "Đau tai",
+        "en": "Ear pain"
+      },
+      "aliases": [],
+      "description": "Đau tai",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ENT.HEARING_LOSS",
+      "canonical_name": "Hearing loss",
+      "labels": {
+        "vi": "Giảm thính lực",
+        "en": "Hearing loss"
+      },
+      "aliases": [],
+      "description": "Giảm thính lực",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ENT.NASAL_OBSTRUCTION",
+      "canonical_name": "Nasal obstruction",
+      "labels": {
+        "vi": "Nghẹt mũi",
+        "en": "Nasal obstruction"
+      },
+      "aliases": [],
+      "description": "Nghẹt mũi",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ENT.RUNNY_NOSE",
+      "canonical_name": "Rhinorrhea",
+      "labels": {
+        "vi": "Chảy mũi",
+        "en": "Rhinorrhea"
+      },
+      "aliases": [],
+      "description": "Chảy mũi",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ENT.SORE_THROAT",
+      "canonical_name": "Sore throat",
+      "labels": {
+        "vi": "Đau họng",
+        "en": "Sore throat"
+      },
+      "aliases": [],
+      "description": "Đau họng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "ENT.HOARSENESS",
+      "canonical_name": "Hoarseness",
+      "labels": {
+        "vi": "Khàn tiếng",
+        "en": "Hoarseness"
+      },
+      "aliases": [],
+      "description": "Khàn tiếng",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "DERM.RASH",
+      "canonical_name": "Rash",
+      "labels": {
+        "vi": "Phát ban",
+        "en": "Rash"
+      },
+      "aliases": [],
+      "description": "Phát ban",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "DERM.ITCHING",
+      "canonical_name": "Pruritus",
+      "labels": {
+        "vi": "Ngứa",
+        "en": "Pruritus"
+      },
+      "aliases": [],
+      "description": "Ngứa",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "EYE.VISION_CHANGE",
+      "canonical_name": "Vision change",
+      "labels": {
+        "vi": "Thay đổi thị lực",
+        "en": "Vision change"
+      },
+      "aliases": [],
+      "description": "Thay đổi thị lực",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "EYE.EYE_PAIN",
+      "canonical_name": "Eye pain",
+      "labels": {
+        "vi": "Đau mắt",
+        "en": "Eye pain"
+      },
+      "aliases": [],
+      "description": "Đau mắt",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GYN.LMP",
+      "canonical_name": "Last menstrual period",
+      "labels": {
+        "vi": "Ngày đầu kỳ kinh cuối",
+        "en": "Last menstrual period"
+      },
+      "aliases": [],
+      "description": "Ngày đầu kỳ kinh cuối",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "DATE",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GYN.PREGNANCY_STATUS",
+      "canonical_name": "Pregnancy status",
+      "labels": {
+        "vi": "Tình trạng thai",
+        "en": "Pregnancy status"
+      },
+      "aliases": [],
+      "description": "Tình trạng thai",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "SINGLE_SELECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GYN.VAGINAL_BLEEDING",
+      "canonical_name": "Vaginal bleeding",
+      "labels": {
+        "vi": "Ra huyết âm đạo",
+        "en": "Vaginal bleeding"
+      },
+      "aliases": [],
+      "description": "Ra huyết âm đạo",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "GYN.VAGINAL_DISCHARGE",
+      "canonical_name": "Vaginal discharge",
+      "labels": {
+        "vi": "Khí hư",
+        "en": "Vaginal discharge"
+      },
+      "aliases": [],
+      "description": "Khí hư",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "BOOLEAN",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "SOCIAL.RECREATIONAL_DRUG",
+      "canonical_name": "Recreational drug use",
+      "labels": {
+        "vi": "Sử dụng chất",
+        "en": "Recreational drug use"
+      },
+      "aliases": [],
+      "description": "Sử dụng chất",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRUCTURED_OBJECT",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    },
+    {
+      "concept_id": "SOCIAL.LIVING_SITUATION",
+      "canonical_name": "Living situation",
+      "labels": {
+        "vi": "Hoàn cảnh sống",
+        "en": "Living situation"
+      },
+      "aliases": [],
+      "description": "Hoàn cảnh sống",
+      "input_scope": [
+        "PATIENT_REPORTED",
+        "HIS"
+      ],
+      "value_type": "STRING",
+      "allowed_values": null,
+      "unit": null,
+      "constraints": {},
+      "supports_negation": true,
+      "supports_temporality": true,
+      "regulatory_refs": []
+    }
+  ]
+}

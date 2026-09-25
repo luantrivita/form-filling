@@ -1,0 +1,21 @@
+{
+  "id": "qwen3_30b_a3b_instruct_2507",
+  "hf_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "family": "qwen3_moe",
+  "role": "teacher_candidate",
+  "license": "apache-2.0",
+  "total_parameters_b": 30.5,
+  "active_parameters_b": 3.3,
+  "context_length": 262144,
+  "recommended_dtype": "bfloat16",
+  "benchmark_mode": "non_thinking",
+  "generation": {
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "serving": {
+    "engine": "vllm",
+    "tensor_parallel_size": 2,
+    "extra_args": []
+  }
+}

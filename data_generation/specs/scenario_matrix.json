@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "required_scenarios": [
+    "positive_current",
+    "explicit_negative",
+    "historical",
+    "resolved",
+    "uncertain",
+    "self_correction",
+    "not_mentioned",
+    "indirect_expression",
+    "multi_value",
+    "numeric_unit",
+    "caregiver_report",
+    "distractor"
+  ],
+  "robustness_scenarios": [
+    "code_switch",
+    "asr_noise",
+    "long_context",
+    "source_conflict"
+  ],
+  "length_tiers": {
+    "SHORT": "4-8 turns",
+    "MEDIUM": "9-20 turns",
+    "LONG": "21-50 turns"
+  }
+}

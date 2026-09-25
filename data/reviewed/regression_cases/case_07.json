@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1.0",
+  "generation_controls": {
+    "length_tier": "SHORT",
+    "scenario_tags": [
+      "not_mentioned"
+    ],
+    "allowed_speakers": [
+      "INTAKE_ASSISTANT",
+      "PATIENT"
+    ],
+    "style": "natural",
+    "max_extra_minor_facts": 0
+  },
+  "fact_graph": {
+    "base_case_id": "base_reg_07",
+    "registry_version": "0.1.0",
+    "facts": [
+      {
+        "fact_id": "f1",
+        "concept_id": "HISTORY.ALLERGY.DRUG",
+        "value": [],
+        "unit": null,
+        "assertion": "NEGATIVE",
+        "temporality": "CURRENT",
+        "clinical_status": "UNKNOWN",
+        "experiencer": "PATIENT",
+        "must_mention": true,
+        "notes": ""
+      }
+    ],
+    "forbidden_major_facts": [
+      "new diagnosis",
+      "new treatment",
+      "unprovided exam finding"
+    ],
+    "case_notes": "dyspnea is deliberately not mentioned and must not be filled"
+  },
+  "conversation": {
+    "conversation_id": "conv_reg_07",
+    "base_case_id": "base_reg_07",
+    "language": "vi",
+    "turns": [
+      {
+        "turn_id": 1,
+        "speaker": "INTAKE_ASSISTANT",
+        "text": "Anh có dị ứng thuốc nào không?"
+      },
+      {
+        "turn_id": 2,
+        "speaker": "PATIENT",
+        "text": "Không, trước giờ tôi chưa từng dị ứng thuốc."
+      }
+    ],
+    "metadata": {
+      "synthetic": true,
+      "generator_version": "manual_regression_v0.1",
+      "prompt_version": "manual",
+      "registry_version": "0.1.0",
+      "schema_version": "0.1.0",
+      "seed": 7
+    }
+  },
+  "evidence_alignment": {
+    "conversation_id": "conv_reg_07",
+    "alignments": [
+      {
+        "fact_id": "f1",
+        "turn_ids": [
+          2
+        ],
+        "spans": [
+          {
+            "turn_id": 2,
+            "start_char": 0,
+            "end_char": 44,
+            "text": "Không, trước giờ tôi chưa từng dị ứng thuốc."
+          }
+        ],
+        "supported": true,
+        "notes": ""
+      }
+    ]
+  }
+}
